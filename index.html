@@ -8,8 +8,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200..800;1,200..800&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
 
     <title>Front-end</title>
 </head>
@@ -35,7 +34,7 @@
                 <h1>Algoritmo Genético</h1>
                 <p>Experimente um algoritmo genético em ação: defina os parâmetros, execute a simulação e visualize como
                     as soluções evoluem ao longo das gerações.</p>
-                
+
                 <button class="started">Vamos começar ?</button>
             </div>
 
@@ -50,6 +49,7 @@
                 Docker
             </div>
             <div>
+                <img src="./assets/fastapi.png" alt="">
                 FastApi
             </div>
             <div>
@@ -65,7 +65,76 @@
                 Css
             </div>
         </section>
+
+        <section class="config">
+            <h2>Simulação</h2>
+            <p>
+                Este é um microsserviço que executa um <span class="underline">Algoritmo Genético</span> aplicado a um problema
+                computacional. Insira os parâmetros, execute a simulação e visualize os resultados da evolução ao longo
+                das gerações.
+            </p>
+            <form id="simulacao-form">
+                <div class="name">
+                    <label for="nome">Nome da Simulação:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+
+                <div class="flex">
+                    <div>
+                        <label for="pop_size">Tamanho da População:</label>
+                        <input type="number" id="pop_size" name="pop_size" required min="1">
+                    </div>
+                    <div>
+                        <label for="geracoes">Gerações:</label>
+                        <input type="number" id="geracoes" name="geracoes" required min="1">
+                    </div>
+                </div>
+
+                <div class="flex">
+                    <div>
+                        <label for="epocas">Épocas:</label>
+                        <input type="number" id="epocas" name="epocas" required min="1">
+                    </div>
+                    <div>
+                        <label for="mutacao">Taxa de Mutação (%):</label>
+                        <input type="number" id="mutacao" name="mutacao" required min="0" max="100" step="0.01">
+                    </div>
+                </div>
+                <button type="submit" id="submit-btn" disabled>Executar Simulação</button>
+            </form>
+        </section>
     </main>
+
+    <Footer>
+        <div>
+            Microserviço construido por Camille & Liander.
+        </div>
+    </Footer>
+
+
 </body>
+    <script>
+       const form = document.getElementById('simulacao-form');
+  const button = document.getElementById('submit-btn');
+
+  form.addEventListener('input', () => {
+    button.disabled = !form.checkValidity();
+  });
+
+  form.addEventListener('submit', (e) => {
+    e.preventDefault(); // impede envio real
+    button.classList.add('loading');
+    button.textContent = 'Executando...';
+
+    // Simula tempo de execução do AG (ex: 2.5 segundos)
+    setTimeout(() => {
+      button.classList.remove('loading');
+      button.textContent = 'Executar Simulação';
+
+      // Aqui você pode exibir resultados ou redirecionar
+      alert('Simulação concluída!');
+    }, 2500);
+  });
+    </script>
 
 </html>
