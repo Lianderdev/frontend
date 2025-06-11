@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    background-color: #09090b;
+    color: white;
+
+    font-family: 'Karla';
+}
+
+/*Header*/
+header {
+    width: 100%;
+    border-bottom: 0.5px solid #27272a;
+}
+
+header .content {
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px 0;
+}
+
+header .content .logo {
+    font-size: 1.2rem;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+
+
+header .content .ifpa {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    padding: 5px 7px;
+    border-radius: 5px;
+
+    background-color: #45a452;
+}
+
+header .content .ifpa .img {
+    width: 30px;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+header .content .ifpa .img img {
+    width: 55px;
+    object-fit: cover;
+    background-color: transparent;
+    margin-left: -12px;
+    margin-top: 2px;
+}
+
+header .content .ifpa span {
+    background-color: #45a452;
+    font-weight: 500;
+    letter-spacing: -1px;
+}
+
+/*Main*/
+main {
+    width: 60%;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    border-right: 0.5px solid #27272a;
+    border-left: 0.5px solid #27272a;
+}
+
+/*home*/
+.home {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 50px;
+}
+
+.home .content {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.home .content h1 {
+    font-size: 3.4rem;
+    background: linear-gradient(90deg, #00FF7F, #81b6e1);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    letter-spacing: -4px;
+}
+
+
+.home .content p {
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 30px;
+    color: gray;
+}
+
+.home .content .started {
+    width: 170px;
+    border: none;
+    background-color: #00FF7F;
+    padding: 10px 15px;
+    border-radius: 10px;
+    color: #082e1b;
+    font-weight: 800;
+    font-size: 1rem;
+    letter-spacing: -1px;
+}
+
+.home .img {
+    width: 40%;
+}
+
+.home .img img {
+    width: 100%;
+    transform: rotate(-15deg);
+}
+
+
+/*ferramentas*/
+.ferramentas {
+    width: 100%;
+    height: 70px;
+    border-top: 0.5px solid #27272a;
+    border-bottom: 0.5px solid #27272a;
+
+    display: flex;
+}
+
+.ferramentas div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex: 1;
+    border-left: 0.5px solid #27272a;
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+.ferramentas div img {
+    width: 30px;
+}
