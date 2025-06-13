@@ -9,8 +9,10 @@
     font-family: 'Geist', sans-serif;
 }
 
-body, button, input {
-     font-family: 'Geist', sans-serif;
+body,
+button,
+input {
+    font-family: 'Geist', sans-serif;
 }
 
 button {
@@ -37,6 +39,20 @@ header .content .logo {
     font-size: 1.2rem;
     font-weight: 600;
     letter-spacing: -1px;
+
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+header .content .logo div {
+    width: 17px;
+    height: 17px;
+    border-radius: 50%;
+    background: linear-gradient(90deg, #00FF7F, #81b6e1);
+
+    border: 2px solid #27272a;
+    outline: 1px solid #45a452;
 }
 
 header .content .ifpa {
@@ -166,7 +182,7 @@ main {
     padding: 50px;
 }
 
-.config h2{
+.config h2 {
     font-size: 2.5rem;
     letter-spacing: -2px;
 }
@@ -263,6 +279,19 @@ main {
     }
 }
 
+/*Resuktados*/
+.resultados {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 50px;
+}
+
+h2 {
+    font-size: 2.5rem;
+    letter-spacing: -2px;
+}
+
 /*Footer*/
 footer {
     width: 100%;
@@ -280,6 +309,7 @@ footer div {
 }
 
 .underline {
-      color: gray;
+    color: gray;
     text-decoration: underline;
 }
+
