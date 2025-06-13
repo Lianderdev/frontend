@@ -183,7 +183,6 @@ main {
     flex-direction: column;
     gap: 40px;
     padding: 50px;
-    border-radius: 10px;
 
     border: 1px solid #27272a;
 }
@@ -214,7 +213,6 @@ main {
 .config form input {
     border: none;
     border: 1px solid rgb(78, 75, 75);
-    border-radius: 10px;
     padding: 10px 15px;
     font-size: 1.2rem;
     font-weight: 700;
@@ -232,7 +230,6 @@ main {
     padding: 10px;
     background: #eeecec;
     color: #09090b;
-    border-radius: 10px;
 }
 
 .config form button:disabled {
